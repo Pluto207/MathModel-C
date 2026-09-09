@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 虚拟环境
+.venv/
+venv/
+
+# Windows 系统字体：不可再分发，按需由本机生成
+templates/cumcm/论文/fonts/system/
+# 思源宋体大字体：OFL 可再分发但体积大，由 tools/fonts/fetch_sourcehan.py 获取
+templates/cumcm/论文/fonts/SourceHanSerifCN-*.otf
+
+
+# 本地论文语料与抽取文本（版权与竞赛资料边界，不随仓库分发）
+case_patterns/抽样文本/
+case_patterns/pre_ai_2016_2019/corpus_index.json
+case_patterns/modern_2020_2023_A/corpus_index.json
+case_patterns/corpus_index.json
+case_patterns/2020-2025可读案例状态.md
+
+# 本地杂项
+.DS_Store
+Thumbs.db
+*.log
+*.aux
+*.out
+*.toc
+*.synctex.gz

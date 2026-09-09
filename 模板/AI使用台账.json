@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "contest_year": 2026,
+  "entries": [
+    {
+      "date": null,
+      "tool": null,
+      "model_version": null,
+      "stage": "analysis|modeling|matlab|writing|review",
+      "task_summary": null,
+      "input_scope": null,
+      "output_used": false,
+      "human_modification": null,
+      "verification": null,
+      "reviewers": [],
+      "status": "DRAFT"
+    }
+  ]
+}

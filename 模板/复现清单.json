@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "competition": "cumcm",
+  "problem": null,
+  "project_root": null,
+  "model_version": "v0.1",
+  "matlab_version": null,
+  "toolboxes": [],
+  "python_version": null,
+  "input_files": [],
+  "input_sha256": {},
+  "entrypoints": [],
+  "commands": [],
+  "random_seed": null,
+  "parameters": {},
+  "outputs": [],
+  "runtime_seconds": null,
+  "verification": {
+    "baseline_compared": false,
+    "constraints_checked": false,
+    "units_checked": false,
+    "sensitivity_checked": false,
+    "human_reviewers": []
+  },
+  "known_risks": []
+}
