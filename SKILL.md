@@ -51,6 +51,12 @@ description: 面向 CUMCM 国赛的 MATLAB-first 数学建模协作 Skill：融�
 每个比赛项目使用：`state/`、`题目/`、`数据/`、`求解/`、`结果/`、`图表/`、`论文/`、`支撑材料/`。
 每问至少有 `求解/问题X/main_qX.m`，最终论文入口固定为 `论文/论文.tex`，结果优先保存 CSV/MAT/JSON，图表由代码生成。
 
+## 双阶段与多机运行策略
+
+- 可先用数模A形成完整 `DRAFT` 初稿；初稿冻结后必须由数模C按角色重做模型、MATLAB结果、证据链和论文，最终只认 C-approved 版本。
+- 三台电脑各自安装 Skill；比赛项目只有一个权威目录。在一起时使用可信局域网共享，分开时使用受控离线交接包；赛题/附件/比赛项目不上传 GitHub。
+- 建模主、MATLAB主、论文主的写入边界和交接格式见 `docs/三人分工与Skill使用方案.md`、`docs/A初稿到C优化整合流程.md`、`docs/多机异构Agent交接规范.md`。
+
 ## 运行时加载与质量升级
 
 - 写作前必须读取 `references/writing/高分表达控制.md`、`references/writing/摘要与结果分析范式.md`。
