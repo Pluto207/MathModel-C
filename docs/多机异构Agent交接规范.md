@@ -1,5 +1,22 @@
 # 多机异构 Agent 交接规范
 
+## 0. 队长/主协调人的部署需要（你）
+
+建议由当前 OpenClaw 所在的 Windows/WSL2 电脑作为主协调机，并完成以下一次性部署：
+
+1. 确认已 clone `https://github.com/Pluto207/MathModel-C.git`，进入仓库根目录；
+2. 运行 `python tools/fonts/fetch_sourcehan.py`，再运行 `python tools/fonts/setup_fonts.py`；
+3. 运行 `python tools/c.py self-check`，确认 `status: PASS`；
+4. 确认 OpenClaw 能读取本仓库的 `SKILL.md`、`references/`、`templates/` 和 `tools/`；
+5. 确认本机有 MATLAB 与 XeLaTeX；在 MATLAB 中加入 `tools/matlab/` 并运行环境预检；
+6. 建立唯一比赛项目目录，例如 `D:\mathmodel2026`，只对可信局域网开启 SMB 读写共享；
+7. 在共享目录中由你执行一次 `python <本机MathModel-C路径>/tools/c.py init 2026国赛-A题 --questions 4`；
+8. 在项目根目录填写 `团队分工.md`，指定角色、唯一项目路径、当前写入者和交接负责人；
+9. 由你维护 `state/decision_log.json`、阶段决策和最终整合版本；不要让多个 Agent 同时修改它；
+10. 比赛期间不把赛题 PDF、附件、项目代码、结果、论文草稿上传 GitHub；分开时使用可信局域网或受控离线介质交接。
+
+主协调机不必承担全部计算，但必须保留项目权威目录和最终整合权。若你的电脑不是最适合跑 MATLAB 的机器，让 MATLAB 主在其电脑计算，再通过交接包导入经审核的结果。
+
 ## 1. 两层同步
 
 ### Skill 层
